@@ -1,0 +1,162 @@
+/* IMPORT DAS FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* INDICAÇÕES DE VARIAVEIS */
+:root{
+    --branco-principal: #ffffff;
+    --cinza-secundario: #c0c0c0;
+    --botao-azul: #167bf7;
+    --cor-de-fundo: #00030c;
+    --botao-azul-efeito: #578fd4;
+
+    /* fontes*/
+    --fonte-principal: 'inter'
+}
+
+/* CONFIG PARA LIMPAR MARGEM INTERNA E EXTERNA*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CONFIG PARA MAIN PAGE */
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.principal{
+    background-image: url("imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    padding: 1em;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    border:2px solid var(--branco-principal);
+    border-radius: 5px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa{
+    margin: 6em;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 5em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+/* SESSÃO DISPONIVEL NOS DISPOSITIVOS */
+
+.dispostivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /* para remover o pontinho na palavra da lista*/
+    margin: 5
+    em 0;
+}
+
+.lista__item{
+    text-align: center;
+}
+
+/* SESSÃO DO RODAPÉ */
+
+.rodape__logo{
+    margin: 2em auto; /* SANTO GRAAL DA CENTRALIZAÇÃO DE IMAGEM NUNCA ESQUEÇA */
+    display: block;
+    max-width: 100%;
+}
+
+.rodape__lista{
+    width: 1450px;
+    margin: none;
+}
+
+.lista__link{
+    display: inline-block;
+    max-width: 100%;
+    margin-left: 1em;
+}
+
+.lista__link > a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    font-weight: bold;
+}
+
+.rodape__texto{
+    margin: 2em auto;
+    text-align: center;
+    width: 1100px;
+}
+
+/* ESTILIZANDO LINK DO RODAPÉ */
+
+.lista__link a:hover{
+    color: var(--botao-azul);
+}
+.lista__link a:active{
+    color: purple;
+}
+
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
