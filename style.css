@@ -127,6 +127,8 @@ body{
 .rodape__lista{
     width: 1450px;
     margin: none;
+    justify-content: center;
+    display: flex;
 }
 
 .lista__link{
@@ -139,6 +141,7 @@ body{
     text-decoration: none;
     color: var(--branco-principal);
     font-weight: bold;
+    font-size: 12px;
 }
 
 .rodape__texto{
